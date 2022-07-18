@@ -1,0 +1,25 @@
+*****************************Metric Server***************************
+
+
+git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
+
+
+kubectl create -f .
+
+
+watch "kubectl top node"
+
+kubectl top node
+kubectl top pod
+
+kubectl logs -f podname
+
+kubectl logs -f podname |grep users
+
+kubectl logs webapp-2 -c   (-c is specify the container)
+
+kubectl logs -f etcd-controlplane -n kube-system  *-f is live logs command**
+
+kubectl logs -f podname applicationname  *if having multiple containers*
+
+kubectl logs  webapp-2 -c simple-webapp
